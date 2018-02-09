@@ -1,0 +1,1351 @@
+
+/************ font ************/
+	@font-face {
+	  font-family: 'Gotham-Light';
+	  src: url('../Font/Gotham-Light.eot');
+	  src: url('../Font/Gotham-Light.woff') format('woff'),
+	       url('../Font/Gotham-Light.ttf') format('truetype'),
+	       url('../Font/Gotham-Light.svg#Gotham-Light') format('svg'),
+	       url('../Font/Gotham-Light.eot?#iefix') format('embedded-opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'Gotham-Medium';
+	  src: url('../Font/Gotham-Medium.eot');
+	  src: url('../Font/Gotham-Medium.woff') format('woff'),
+	       url('../Font/Gotham-Medium.ttf') format('truetype'),
+	       url('../Font/Gotham-Medium.svg#Gotham-Medium') format('svg'),
+	       url('../Font/Gotham-Medium.eot?#iefix') format('embedded-opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'Gotham-Thin';
+	  src: url('../Font/Gotham-Thin.eot');
+	  src: url('../Font/Gotham-Thin.woff') format('woff'),
+	       url('../Font/Gotham-Thin.ttf') format('truetype'),
+	       url('../Font/Gotham-Thin.svg#Gotham-Thin') format('svg'),
+	       url('../Font/Gotham-Thin.eot?#iefix') format('embedded-opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'Gotham-Black';
+	  src: url('../Font/Gotham-Black.eot');
+	  src: url('../Font/Gotham-Black.woff') format('woff'),
+	       url('../Font/Gotham-Black.ttf') format('truetype'),
+	       url('../Font/Gotham-Black.svg#Gotham-Black') format('svg'),
+	       url('../Font/Gotham-Black.eot?#iefix') format('embedded-opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'Gotham-Bold';
+	  src: url('../Font/Gotham-Bold.eot');
+	  src: url('../Font/Gotham-Bold.woff') format('woff'),
+	       url('../Font/Gotham-Bold.ttf') format('truetype'),
+	       url('../Font/Gotham-Bold.svg#Gotham-Bold') format('svg'),
+	       url('../Font/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'Gotham-Book';
+	  src: url('../Font/Gotham-Book.eot');
+	  src: url('../Font/Gotham-Book.woff') format('woff'),
+	       url('../Font/Gotham-Book.ttf') format('truetype'),
+	       url('../Font/Gotham-Book.svg#Gotham-Book') format('svg'),
+	       url('../Font/Gotham-Book.eot?#iefix') format('embedded-opentype');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+/**************************************                  ************/
+body {
+	width: 100vw;
+	overflow-x: hidden;
+	font-family: Gotham-Book;
+}
+a {
+	font-family: Gotham-Book;
+	line-height: 22px;
+	font-size: 16px;
+	color: #147EF8;
+
+}
+a:hover {
+	color : #2F2850;
+	text-decoration: none;
+}
+a:visited {
+	color :#88DAFB;
+}
+.pad0 {
+	padding: 0;
+}
+.right_float {
+	float: right;
+}
+.left_float {
+	float: left;
+}
+.center_float {
+	margin: 0 auto;
+}
+.box-wrap {
+    max-width: 1280px;
+    padding: 0;
+    position: relative;
+}
+.banner_title {
+	font-family: Gotham-Medium;
+	font-style: normal;
+	line-height: 38px;
+	font-size: 34px;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+}
+.banner_text {
+	font-family: Gotham-Book;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: -0.0325em;
+}
+.btn_radio {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: Gotham-Book;
+	font-style: normal;
+	font-weight: 300;
+	line-height: 22px;
+	font-size: 16px;
+	color: #333333;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default radio button */
+.btn_radio input {
+    position: absolute;
+    opacity: 0;
+}
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #DBDBDB;
+	box-sizing: border-box;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.btn_radio:hover input ~ .checkmark {
+    background-color: #eee;
+}
+
+/* When the radio button is checked, add a blue background */
+.btn_radio input:checked ~ .checkmark {
+    background: #FFFFFF;
+	border: 6px solid #0D94FA;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+/**************************** For About page **********************/
+	.about_banner {
+		position: relative;
+		width: 100%;
+		min-height: 390px;
+		background: radial-gradient(764.27px at 100% 0%, #A5E8FF 0%, #00B3F0 50.81%, #0D94FA 100%);
+	}
+	.about_banner::after {
+		position: absolute;
+	    content: ' ';
+	    bottom: 0;
+	    border-width: 0 0 200px 100vw;
+	    border-color: transparent transparent #F7F7F7 transparent;
+	    border-style: solid;
+	    z-index: 2;
+	}
+	.about_banner_text_content {
+		position: absolute;
+		width: 418px;
+		height: 192px;
+		left: 150px;
+		top: 110px;
+	}
+	.about_banner .banner_text {
+	    height: 134px;
+	    letter-spacing: unset;
+	    vertical-align: middle;
+	    display: table-cell;
+	}
+	.about_banner_girl {
+		position: absolute;
+		width: 117px;
+		height: 335px;
+		right: 181px;
+		top: 79px;
+
+		background: url('../Img/about_girl.png');
+		background-size: contain;
+		z-index: 10;
+	}
+	/* more features */
+	.about_feature {
+		min-height:625px;
+		width: 100%;
+		background: #f7f7f7;
+		padding-top: 20px;
+	}
+	.about_feature_container {
+		width: 780px;
+	    margin: 0 auto;
+	}
+	.about_feature_text {
+		font-weight: 300;
+		line-height: 26px;
+		font-size: 18px;
+		color: #424242;
+	}
+	.about_feature_container h3 {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 40px;
+		font-size: 32px;
+		text-align: center;
+		letter-spacing: -0.0197917em;
+
+		color: #333333;
+		margin-top:40px;
+		margin-bottom: 40px;
+	}
+	.about_address_card {
+		width: 339px;
+		height: 311px;
+		background: white;
+		border-radius: 10px;
+	    box-shadow: 0px 3px 19px rgb(196, 195, 195);
+	    text-align: center;
+	}
+	.about_address_card img{
+		width: 55px;
+		height: 54px;
+		margin-top: 54px;
+	}
+	.about_address_card .about_feature_name{
+		font-family: Gotham-Medium;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 32px;
+		font-size: 28px;
+		text-align: center;
+		letter-spacing: -0.0311538em;
+		color: #333333;
+		margin-top: 27px;
+	    margin-bottom: 0px;
+	}
+	.about_address_card .about_feature_job {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 25px;
+		font-size: 18px;
+		text-align: center;
+		color: #424242;
+		margin-bottom: 0;
+	}
+	.about_address_card .about_feature_description {
+		width: 279px;
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		color: #424242;
+		margin: 25px auto;
+		text-align: left;
+	}
+	/* about founder container */
+	.about_founder {
+		width: 100%;
+		min-height: 520px;
+	}
+	.about_founder row {
+		margin-left: 65px;
+		margin-right: 65px;
+	}
+	.about_founder h3 {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 40px;
+		font-size: 32px;
+		text-align: center;
+		letter-spacing: -0.0165714em;
+		color: #333333;
+		padding-top: 100px;
+		margin-bottom: 46px;
+	}
+	.about_founder_card {
+		width: 280px;
+		height: 237px;
+		text-align: center;
+		margin: 10 auto;
+	}
+	.about_founder_card .about_circle_avatar {
+	    border-radius: 50%;
+	    width: 159px;
+	    height: 159px;
+	}
+	.about_founder_card .about_founder_name {
+		font-family: Gotham-Medium;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 28px;
+		font-size: 22px;
+		text-align: center;
+		color: #333333;
+		margin-top: 18px;
+		margin-bottom: 0;
+	}
+	.about_founder_card .about_founder_linkedin {
+		width: 16px;
+		height: 16px;   
+		margin-left: 11px;
+	    margin-top: 10px;
+	}
+	.about_founder_card .about_founder_job {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		text-align: center;
+		color: #424242;
+		margin:0;
+	}
+	/* space */
+	.about_space {
+		margin: 0 50px;
+		border-top:1px solid #DBDBDB;
+		height: 110px;
+	}
+	/* contact form */
+	.about_contact_form {
+		width: 100%;
+		min-height: 632px;
+		margin-bottom: 100px;
+	}
+	.about_contact_form img.about_contact_man{
+		width:137px;
+		height: 384px;
+		position: absolute;
+		left: 162px;
+		top: 206px;
+	}
+	.about_contact_form img.about_contact_chart1{
+		width:64px;
+		height: 84px;
+		left: 925px;
+		top: 19px;
+		position: absolute;
+	}
+	.about_contact_form img.about_contact_chart2{
+		width:123px;
+		height: 117px;
+		right: 152px;
+		top: 27px;
+		position: absolute;
+	}
+	.about_contact_form .about_form_content {
+		width: 474px;
+		margin: 0 auto;
+	}
+	.about_form_content h3 {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 30px;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: -0.0167647em;
+
+		color: #333333;
+		margin-bottom: 40px;
+	}
+	.about_form_content form {
+		margin-bottom: 0;
+	}
+	.about_form_content .form-group {
+		margin-bottom: 20px;
+		min-height: 74px;
+	}
+	.about_form_content form label {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		font-size: 14px;
+		color: #A5ABB0;
+	}
+	.about_form_content form input {
+		height: 44px;
+	}
+	.about_form_content form textarea {
+		height: 174px;
+		overflow-x: hidden;
+	}
+	.about_form_content form button {
+		width: 125px;
+		height: 56px;
+		background: #0D94FA;
+		border-radius: 28px;
+
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 22px;
+		font-size: 16px;
+		text-align: center;
+		text-transform: uppercase;
+
+		color: #FFFFFF;
+	}
+	.about_mail_success {
+		width:470px;
+		height:399px;
+		margin:0 auto;
+		margin-top: 122px;
+		text-align: center;
+		display: none;
+	}
+	.about_mail_success .about_mail_image_content {
+		width: 226px;
+		height: 225px;
+		margin: 0 auto;
+	}
+	.about_mail_success .about_mail_image_content img{
+		width: 100%;
+		margin-top: 20px;
+	}
+	.about_mail_success .about_mail_suc_title {
+
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 30px;
+		font-size: 24px;
+		text-align: center;
+		letter-spacing: -0.0167647em;
+		margin-bottom:13px;
+		color: #333333;
+	}
+	.about_mail_success .about_mail_suc_desc {
+		
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		text-align: center;
+		margin-bottom: 40px;
+		color: #424242;
+	}
+	.about_mail_success button {
+		width: 293px;
+		height: 56px;
+		background: #0D94FA;
+		border-radius: 28px;
+
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 22px;
+		font-size: 16px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+
+
+
+/**************************** For Cases Page **********************/
+	.cases_banner {
+		position: relative;
+		width: 100%;
+		min-height: 370px;
+		background: radial-gradient(764.27px at 100% 0%, #A5E8FF 0%, #00B3F0 50.81%, #0D94FA 100%);
+	}
+	.cases_banner::after {
+		position: absolute;
+	    content: ' ';
+	    bottom: 0;
+	    border-width: 0 0 150px 100vw;
+	    border-color: transparent transparent #FFFFFF transparent;
+	    border-style: solid;
+	    z-index: 2;
+	}
+	.cases_logo {
+		position: absolute;
+		width:80px;
+		height: 80px;
+		left:150px;
+		top: 110px;
+		border-radius: 50%;
+		background: white;
+		overflow: hidden;
+	}
+	.cases_logo img {
+		width: 100%;
+		margin-top: 18px;
+	}
+	.cases_banner_text_content {
+		position: absolute;
+		width: 480px;
+		height: 124px;
+		left: 260px;
+		top: 110px;
+	}
+	.cases_mainbody {
+		width: 780px;
+		margin:0 auto;
+	}
+	.cases_mainbody h3 {
+		font-family: Gotham-Medium;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 30px;
+		font-size: 24px;
+		letter-spacing: -0.0166667em;
+
+		color: #333333;
+	}
+	.cases_mainbody p {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		letter-spacing: -0.0325em;
+
+		color: #999999;
+		margin: 0;
+	}
+	.cases_icons{
+		padding-top: 16px;
+	}
+	.cases_topic_card {
+		width: 230px;
+	    height: 176px;
+	    background: white;
+	    border-radius: 3px;
+	    box-shadow: 0px 3px 19px rgb(220, 220, 220);
+	    text-align: center;
+	}
+	.cases_topic_card img {
+		margin-top:20px;
+		width: 64px;
+		height: 64px;
+	}
+	.cases_topic_card .cases_topic_number{
+		margin-top:20px;
+		margin-bottom: 0;
+		font-family: Gotham-Medium;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		font-size: 30px;
+		text-align: center;
+
+		color: #333333;
+	}
+	.cases_topic_card .cases_topic_name {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		text-align: center;
+
+		color: #424242;
+	}
+	.cases_problem_section {
+		padding-top:50px;
+	}
+	.cases_problem_section h3 {
+		color: #424242;
+		margin-bottom: 20px;
+	}
+	.cases_problem_section p {
+		margin-bottom: 30px;
+	}
+	.cases_problem_section ul {
+		padding-left: 20px;
+		margin-bottom: 0;
+		height: 86px;
+	}
+	.cases_problem_section li {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 26.7px;
+		font-size: 16px;
+
+		color: #878787;
+	}
+	.cases_main_img {
+		width: 100%;
+		height: 450px;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.cases_reason_section h3 {
+		margin-bottom: 0;
+	}
+	.cases_testi_card {
+		width:580px;
+		height: 313px;
+		margin: 50px auto;
+		border-radius: 3px;
+	    box-shadow: 0px 3px 19px rgb(220, 220, 220);
+	    text-align: center;
+	}
+	.cases_testi_card img {
+		width: 100px;
+		height: 100px;
+		margin: 30px auto 5px auto;
+		border-radius: 50%;
+	}
+	.cases_testi_card .cases_testi_name {
+		font-family: Gotham-Medium;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 32px;
+		font-size: 28px;
+		text-align: center;
+		letter-spacing: -0.0311538em;
+
+		color: #333333;
+		margin-bottom: 0;
+	}
+	.cases_testi_card .cases_testi_job {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 25px;
+		font-size: 18px;
+		text-align: center;
+		color: #424242;
+		margin-bottom: 23px;
+	}
+	.cases_testi_card .cases_testi_description {
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		text-align: center;
+		color: #424242;
+		margin:0 30px 30px 30px;
+		text-align: left;
+	}
+	.cases_change_section {
+		padding-bottom: 100px;
+	}
+	.cases_change_section h3{
+		margin-bottom: 20px;
+	}
+	.cases_main_img_container {
+		width: 100%;
+    	overflow-x: hidden;
+	}
+
+
+/**************************** For Price Page **********************/
+	.price_banner {
+		position: relative;
+		width: 100%;
+		min-height: 621px;
+		background: radial-gradient(764.27px at 100% 0%, #A5E8FF 0%, #00B3F0 50.81%, #0D94FA 100%);
+	}
+	.price_banner::after {
+		position: absolute;
+	    content: ' ';
+	    bottom: 0;
+	    border-width: 152.5px 0 0 100vw;
+	    border-color: transparent transparent transparent #FFFFFF;
+	    border-style: solid;
+	    z-index: 2;
+	}
+	.price_banner_text_content {
+		position: absolute;
+		left: 150px;
+		top: 110px;
+	}
+	.price_business_box {
+		position: absolute;
+		width: 580px;
+		height: 626px;
+		left: 150px;
+		top: 198px;
+		background: #FFFFFF;
+		box-shadow: 0px 3px 19px rgba(216, 216, 216, 0.44);
+		border-radius: 4px;
+		z-index: 120;
+		padding: 40px 100px 40px 100px;
+	}
+	.price_business_box h3 {
+		font-family: Gotham-Medium;
+		line-height: 28px;
+		font-size: 22px;
+		text-align: center;
+		color: #333333;
+
+		margin-bottom: 14px;
+	}
+	.price_radio_section {
+		width: 189px;
+		height: 24px;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.price_fee_section {
+		width: 160px;
+		height: 94px;
+		margin: 0 auto;
+		position: relative;
+	}
+	.price_fee_section p {
+		position: absolute;
+		right: 0;
+		top: 19px;
+
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		font-size: 22px;
+
+		color: #0D94FA;
+	}
+	.price_fee_section .price_currency {
+		position: absolute;
+		left: 0;
+		top: 54px;
+
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		font-size: 22px;
+		color: #0D94FA;
+	}
+	.price_fee_section .price_main_num {
+		position: absolute;
+		left: 41px;
+		top: -14px;
+
+		font-family: Gotham-Medium;
+		font-style: normal;
+		font-size: 78px;
+		color: #0D94FA;
+	}
+	.price_business_box p.price_per {
+		margin:0 auto;
+		margin-bottom: 20px;
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		text-align: center;
+
+		color: #999999;
+	}
+	.price_business_box select.price_select_box{
+		width: 100%;
+		height: 44px;
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 22px;
+		font-size: 16px;
+		color: #333333;
+
+		margin-bottom: 40px;
+	}
+	.price_business_box ul {
+		padding-left: 20px;
+		height: 160px;
+		display: table-cell;
+    	vertical-align: middle;
+	}
+	.price_business_box ul li{
+		font-family: Gotham-Book;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 20px;
+		font-size: 16px;
+
+		color: #333333;
+	}
+	.price_business_box button {
+		width: 100%;
+		margin-top: 40px;
+		height: 56px;
+	}
+	.price_enterprise_box {
+		position: absolute;
+		width: 400px;
+		height: 394px;
+		left: 730px;
+		top: 288px;
+		background: #F7F7F7;
+		border: 1px solid #DBDBDB;
+		box-sizing: border-box;
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+		z-index: 100;
+
+		padding:70px 50px 60px 50px;
+	}
+	.price_enterprise_box h3{
+		font-family: Gotham-Medium;
+		line-height: 28px;
+		font-size: 22px;
+
+		color: #333333;
+		margin-bottom: 24px;
+	}
+	.price_enterprise_box p {
+		font-family: Gotham-Book;
+		line-height: 24px;
+		font-size: 16px;
+		color: #424242;
+		margin-bottom: 36px;
+	}
+	.price_enterprise_box button {
+		width:236px;
+		height: 56px;
+	}
+	.price_govern_section {
+		width: 780px;
+		height: 160px;
+		margin: 0 auto;
+		margin-top: 303px;
+	}
+	.price_govern_section .price_govern_desc {
+		width: 498px;
+		float: left;
+	}
+	.price_govern_section .price_govern_desc h3 {
+		font-family: Gotham-Medium;
+		line-height: 30px;
+		font-size: 24px;
+		letter-spacing: -0.0166667em;
+
+		color: #333333;
+		margin-bottom: 20px;
+	}
+	.price_govern_section .price_govern_desc p {
+		font-family: Gotham-Book;
+		line-height: 22px;
+		font-size: 16px;
+
+		color: #000000;
+		margin-bottom: 0px;
+	}
+	.price_govern_section .price_govern_img{
+		width: 223px;
+		height: 154px;
+		float: right;
+	}
+	.price_question_section {
+		margin-bottom: 100px;
+	}
+	.price_question_section h3{
+		margin: 0 auto;
+		margin-top: 96px;
+		margin-bottom: 50px;
+		font-family: Gotham-Book;
+		line-height: 40px;
+		font-size: 32px;
+		text-align: center;
+		letter-spacing: -0.0165714em;
+
+		color: #333333;
+	}
+	.price_question_accordion {
+		position: relative;
+		background: #fff;
+		width: 780px;
+		margin: 0 auto;
+		margin-bottom: 32px;
+	}
+	.price_question_accordion_grey{
+		position: relative;
+		background: #F7F7F7;
+		padding: 20px 20px 32px 20px;
+		width: 820px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.price_question_accordion_border {
+		position: relative;
+		background: #fff;
+		width: 780px;
+		border-bottom: 1px solid #DBDBDB;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+	.price_question_accordion_border .price_question_ac_desc{
+		margin-bottom: 30px;
+	}
+	p.price_question_ac_title {
+		font-family: Gotham-Medium;
+		line-height: 22px;
+		font-size: 16px;
+		color: #424242;
+		margin-bottom: 10px;
+	}
+	p.price_question_ac_desc {
+		font-family: Gotham-Book;
+		line-height: 22px;
+		font-size: 16px;
+		color: #424242;
+		margin-bottom: 0px;
+	}
+	.price_ac_top {
+		position: absolute;
+	    width: 24px;
+	    height: 24px;
+	    right: 0;
+	    top: 0;
+	    text-align: center;
+	}
+	.price_ac_top img {
+	    width: 13.04px;
+	    height: 6.52px;
+	    margin-top: 9px;
+	}
+	.price_question_accordion_grey .price_ac_top {
+		right: 20px;
+	    top: 20px;
+	}
+
+/*** Modal css ***/
+	.price_contact_modal .modal-content{
+		width: 594px;
+		height: 762px;
+		top: 69px;
+   		margin: 0 auto;
+   		border: 0;
+	}
+	.price_contact_modal .modal-header {
+		height: 80px;
+		background: #0D94FA;
+		padding: 0;
+	}
+	.price_contact_modal .modal-header h4 {
+		font-family: Gotham-Book;
+		line-height: normal;
+		font-size: 20px;
+		color: #FFFFFF;
+		margin-top: 26px;
+   		margin-left: 30px;
+	}
+	.price_contact_modal .modal-header .close {
+		padding: 0;
+		margin: 0;
+		opacity: 1;
+	}
+	.price_contact_modal .modal-header .close img {
+		width: 24px;
+	    top: 26px;
+	    right: 30px;
+	    position: absolute;
+	}
+	.price_contact_modal .modal-body {
+		padding: 60px;
+	}
+	.price_contact_modal .about_mail_success{
+		margin-top: 42px;
+	}
+/*********
+		responsive design
+	******************************************/
+	@media ( min-width: 992px) and (max-width: 1279px) {
+		.about_founder .col-lg-3{
+			flex: 0 0 50%;
+	    	max-width: 50%;
+		}
+
+	}
+	@media ( min-width: 576px) and (max-width: 767px) {
+		.about_founder .col-sm-6{
+			flex: 0 0 100%;
+	    	max-width: 100%;
+		}
+
+	}
+	@media ( min-width: 768px) and (max-width: 1279px) 
+	{
+		.box-wrap {
+			max-width: 768px;
+		}
+		.about_banner {
+			min-height: 370px;
+		}
+		.about_banner::after{
+			border-width: 0 0 120px 100vw;
+		}
+		.about_banner_girl {
+			right:90px;
+			top: 83px;
+		}
+		.about_banner_text_content {
+			left: 20px;
+		}
+		.about_feature {
+			min-height: 651px;
+			padding-top: 48px;
+		}
+		.about_feature_container {
+			width: 728px;
+		}
+		.about_founder .row {
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-bottom: 72px;
+		}
+		.about_founder_card {
+			margin-bottom: 13px;
+		}
+		.about_contact_form img.about_contact_man {
+			left: -8px;
+		}
+		.about_contact_form img.about_contact_chart1 {
+		    width: 48px;
+		    height: 62px;
+		    left: 602px;
+		    top: 21px;
+		}
+		.about_contact_form img.about_contact_chart2 {
+		    width: 91px;
+		    height: 87px;
+		    left: 662px;
+		    top: 27px;
+		}
+		/* cases */
+		.cases_banner {
+			height: 350px;
+		}
+		.cases_banner::after {
+		    border-width: 0 0 90px 100vw;
+		}
+		.cases_logo {
+			left:20px;
+		}
+		.cases_banner_text_content {
+			left:130px;
+		}
+		.cases_icons {
+		    padding-top: 36px;
+		}
+		.cases_mainbody {
+		    width: 728px;
+		}
+		.center_card {
+			padding: 0;
+		}
+		.cases_reason_section h3 {
+		    margin-bottom: 20px;
+		}
+		/*price*/
+		.price_banner {
+			min-height: 590px;
+		}
+		.price_banner::after {
+			border-width: 90px 0 0 100vw;
+		}
+		.price_banner_text_content {
+			left: 15px;
+		}
+		.price_business_box {
+			width: 486px;
+			height: 625px;
+			left: 15px;
+			padding-left: 52px;
+			padding-right: 52px;
+		}
+		.price_enterprise_box {
+			width: 252px;
+			height: 438px;
+			left: 501px;
+			padding: 70px 20px 60px 20px;
+		}
+		.price_enterprise_box button {
+			width: 212px;
+		}
+		.price_govern_section {
+		    width: 729px;
+		    margin-top: 282px;
+		}
+		.price_question_section h3 {
+			margin-top: 100px;
+		}
+		.price_question_accordion {
+			width: 728px;
+		}
+		.price_question_accordion_grey {
+			width: 768px;
+			padding: 20px 15px 32px 15px;
+		}
+		.price_question_accordion_border {
+			width: 739px;
+		}
+		.price_contact_modal .modal-content {
+			top: unset;
+			width: unset;
+		}
+		.price_contact_modal .about_mail_success {
+			width:unset;
+		}
+	}
+	@media ( min-width: 320px) and (max-width: 767px) 
+	{
+		.right_float {
+			float: none;
+		}
+		.box-wrap{
+			max-width: 320px;
+		}
+		.about_banner {
+			min-height: 350px;
+		}
+		.about_banner_text_content {
+		    width: 300px;
+		    height: 161px;
+		    left: 10px;
+		    top: 80px;
+		    z-index: 20;
+		}
+		.about_banner .banner_title {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		.about_banner .banner_text {
+			width: 300px;
+			height: 127px;
+		}
+		.about_banner_girl{
+			width: 78px;
+			height: 223px;
+			right: 50px;
+			top: 186px;
+		}
+		.about_banner::after {
+		    border-width: 0 0 50px 100vw;
+		}
+		.about_feature {
+			padding-top: 84px;
+		}
+		.about_feature_container {
+		    width: 300px;
+		    padding-bottom: 70px;
+		}
+		.about_feature_container h3{
+			margin-top: 28px;
+			margin-bottom: 30px;
+		}
+		.about_address_card {
+			width: 280;
+		    margin: 0 auto;
+		    margin-bottom: 30px;
+		}
+		.about_address_card .about_feature_description {
+			margin: 25px 20px;
+			width: 240px;
+		}
+		.about_founder {
+		    padding-bottom: 30px;
+		}
+		.about_founder h3 {
+			margin-bottom: 53px;
+		}
+		.about_founder_card {
+			margin-bottom: 10px;
+		}
+		.about_space {
+	    	margin: 0 10px;
+	    	height: 50px;
+		}
+		.about_contact_man {
+			display: none;
+		}
+		.about_contact_chart1 {
+			display: none;
+		}
+		.about_contact_chart2 {
+			display: none;
+		}
+		.about_contact_form .about_form_content {
+		    width: 300px;
+		}
+		.about_mail_success {
+	    	width: 300;
+	    	margin-top: 0;
+	    }
+	    /* cases */
+	    .cases_banner {
+			min-height: 320px;
+		}
+		.cases_banner::after {
+		    border-width: 0 0 40px 100vw;
+		}
+		.cases_logo {
+			display: none;
+		}
+		.cases_banner_text_content {
+			left:10px;
+			top: 80px;
+			width:300px;
+		}
+		.cases_banner .banner_title {
+			line-height: normal;
+			font-size: 24px;
+			letter-spacing: -0.0166667em;
+			margin-bottom: 10px;
+		}
+		.cases_banner .banner_text {
+			height: 157px;
+			letter-spacing:unset;
+			vertical-align: middle;
+    		display: table-cell;
+		}
+		.cases_icons {
+		    padding-top: 10px;
+		}
+		.cases_mainbody {
+			width: 290px;
+		}
+		.cases_topic_card {
+			width: 290px;
+			margin-bottom: 15px;
+		}
+		.cases_problem_section {
+		    padding-top: 35px;
+		}
+		.cases_testi_card {
+			width: 290px;
+    		height: 400px;
+		}
+		.cases_main_img {
+			margin-left:-470px;
+			width: unset;
+		}
+		.price_banner {
+			min-height: 562.5px;
+		}
+		.price_banner::after {
+			border-width: 38px 0 0 100vw;
+		}
+		.price_banner .banner_title {
+			font-family: Gotham-Medium;
+			line-height: normal;
+			font-size: 24px;
+			letter-spacing: -0.0166667em;
+		}
+		.price_banner_text_content {
+			left: 15px;
+    		top: 80px;
+		}
+		.price_business_box {
+			width: 300px;
+			height: 665px;
+		    left: 10px;
+		    top: 134px;
+		    padding: 40px 10px 40px 10px;
+		}
+		.price_business_box ul {
+			height: 200px;
+		}
+		.price_enterprise_box {
+			width: 280px;
+		    height: 418px;
+		    left: 20px;
+		    top: 735px;
+		    padding: 104px 20px 40px 20px;
+		}
+		.price_enterprise_box h3{
+			margin-bottom: 20px;
+		}
+		.price_enterprise_box p {
+			line-height: 22px;
+		}
+		.price_govern_section {
+		    width: 300px;
+		    height: 414px;
+		    margin: 0 auto;
+		    margin-top: 640px;
+		}
+		.price_govern_section .price_govern_desc {
+			width: 300px;
+		}
+		.price_govern_section .price_govern_desc h3 {
+			line-height: 28px;
+			font-size: 22px;
+			letter-spacing: -0.0151515em;
+			color: #333333;
+		}
+		.price_govern_section .price_govern_desc p {
+			margin-bottom: 30px;
+			float: unset;
+		}
+		.price_govern_section .price_govern_img {
+		    margin: 0 39px;
+		}
+		.price_question_section h3 {
+			margin-top: 80px;
+			margin-bottom: 30px;
+		}
+		.price_question_accordion {
+			width: 300px;
+		}
+		.price_question_accordion_grey {
+			width: 320px;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.price_question_accordion_grey .price_ac_top {
+    		right: 10px;
+    	}
+		.price_question_accordion_border {
+			width: 300px;
+		}
+		.price_contact_modal .modal-content {
+			top: unset;
+			width: unset;
+		}
+		.price_contact_modal .about_mail_success {
+			width: 260px;
+		}
+		.price_contact_modal .about_mail_success button {
+			width: 100%;
+		}
+		.price_contact_modal .modal-body {
+			padding: 60 20 60 20;
+		}
+	}

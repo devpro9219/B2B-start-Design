@@ -1,0 +1,300 @@
+<html>
+    <head>
+        <title>OITCHAU</title>
+       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+       <meta name="description" content="This is the website to Save money by making point control and work shifts in real time">
+       <meta name="apple-mobile-web-app-capable" content="yes">
+       <meta name="apple-touch-fullscreen" content="yes">
+       <meta name="keywords" content="Save Money">
+       <meta name="author" content="Leonid Szneiberg">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+        <link rel="stylesheet" href="Resource/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="Resource/Css/animate.min.css" />
+        <link rel="stylesheet" href="Resource/Css/Style.css"/>
+<style>
+</style>
+    </head>
+    <body>
+      <input type="hidden" id="page_name" value="price">
+        <header>
+           <div class="container">
+              <!--             <nav class="navbar navbar-expand-lg navbar-light main-nav"> -->
+              <nav class="navbar  navbar-expand-lg  navbar-light main-nav">
+                 <a class="navbar-brand" href="#"><img class="main-logo" src="Resource/Img/svg_logo_white.svg" alt="logo"/></a>
+                 <button id="toggle_btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="Resource/Img/sandwich.png"  alt="sandwich" />
+                 </button>
+                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                       <li class="nav-item active">
+                          <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">Preços</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">Integrações</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">Clientes</a>
+                       </li>
+                       <li class="nav-item login-container">
+                          <a class="nav-link login-btn"><span>Entrar</span></a>
+                       </li>
+                    </ul>
+                 </div>
+              </nav>
+           </div>
+        </header>
+        <div  id="navbar">
+           <div class="container">
+              <nav class="navbar navbar-expand-lg navbar-light stick-nav">
+                 <a class="navbar-brand" href="#"><img class="main-logo" src="Resource/Img/svg_logo_nav.svg"  alt="sandwich"/></a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="Resource/Img/sandwich.png"  alt="sandwich"/>
+                 </button>
+                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                       <li class="nav-item active">
+                          <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">Preços</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">Integrações</a>
+                       </li>
+                       <li class="nav-item">
+                          <a class="nav-link" href="#">Clientes</a>
+                       </li>
+                       <li class="nav-item ">
+                          <a class="nav-link login-btn"><span>Entrar</span></a>
+                       </li>
+                    </ul>
+                 </div>
+              </nav>
+           </div>
+        </div>
+    <!-- Modal area -->
+    <div class="modal fade price_contact_modal" tabindex="-1" role="dialog" aria-labelledby="ContactModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Entre em contato</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="Resource/Img/close_icon.png"  alt="close">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="about_form_content">
+                    <form id="price_enter_form">
+                        <div class="form-group">
+                            <label for="about_contact_name">Name</label>
+                            <input id="about_contact_name" class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="about_contact_email">E-mail corporativo</label>
+                            <input id="about_contact_email" class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="about_contact_phone">Telefone</label>
+                            <input id="about_contact_phone" class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="about_contact_message">Mensagem</label>
+                            <textarea id="about_contact_message" class="form-control" type="text"></textarea>
+                        </div>
+                        <button type="button" class="btn_circle btn_blue">enviar</button>
+                    </form>
+                </div>
+                <div class="about_mail_success">
+                    <div class="about_mail_image_content">
+                        <img src="Resource/Img/msg_suc.png"  alt="message">
+                    </div>
+                    <p class="about_mail_suc_title">Sua mensagem foi enviada com sucesso.</p>
+                    <p class="about_mail_suc_desc">Entraremos em contato em breve.</p>
+                    <button type="button" class="btn_circle btn_blue">enviar outra mensagem</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal area -->
+        <div class="price_banner">
+            <div class="container box-wrap">
+                <div class="price_banner_text_content">
+                    <h2 class="banner_title">Planos e preços</h2>
+                </div>
+                <div class="price_business_box">
+                    <h3>Business</h3>
+                    <form class="">
+                        <div class="price_radio_section">
+                            <label class="btn_radio">
+                                mensal
+                                <input type="radio" name="b_type" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="btn_radio float-right">
+                                anual
+                                <input type="radio" name="b_type">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="price_fee_section">
+                            <p class="price_currency">R$</p>
+                            <p class="price_main_num">17</p>
+                            <p>,00</p>
+                        </div>
+                        <p class="price_per">por colaborador, por mês</p>
+                        <div class="select_box_container">
+                        <select class="price_select_box">
+                            <option>até 10 colaboradores1</option>
+                            <option>até 10 colaboradores2</option>
+                             <option>até 10 colaboradores3</option>
+                        </select>
+                        </div>
+                        <ul class="price_business_ul">
+                            <li>Disponível para iPhone e Android</li>
+                            <li>Notificações em tempo real</li>
+                            <li>Back-up na nuvem</li>
+                            <li>Suporte online</li>
+                            <li>Adequado às portarias nº 1510/09 e 373/11 do Ministério do Trabalho.</li>
+                        </ul>
+                        <button class="btn btn_orange btn_circle ">TESTE  GRATUITAMENTE</button>
+                    </form>
+                </div>
+                <div class="price_enterprise_box ">
+                    <h3>Enterprise</h3>
+                    <p>Grandes empresas com 100+ colaboradores pedem um serviço customizado e atendimento especial. Entre em contato com um de nossos representantes!
+                    </p>
+                    <button class="btn btn_transe btn_circle " data-toggle="modal" data-target=".price_contact_modal">ENTRE EM CONTATO</button>
+                </div>
+            </div>
+        </div>
+        <div class="price_govern_section ">
+            <div class="container box-wrap">
+                <div class="price_govern_desc">
+                    <h3>Governos e secretarias de estado</h3>
+                    <p>
+                        Oitchau possui planos específicos para Governo e Secretarias de Estado. Temos a experiência necessária para ajudar gestores a controlar o alto fluxo de trabalho.
+                        </br></br>
+                        <a href="#">Entre em contato</a>
+                    </p>
+                </div>
+                <img src="Resource/Img/government.png" class="price_govern_img "   alt="price">
+            </div>
+        </div>
+        <div class="price_question_section">
+            <div class="container box-wrap">
+                <h3>Perguntas frequentes</h3>
+                <div class="price_question_accordion_border">
+                    <div class="price_ac_top"><img src="Resource/Img/arrow_top.png" class="price_ac_top_icon"></div>
+                    <p class="price_question_ac_title">I registered the wrong number</p>
+                    <p class="price_question_ac_desc">If you registered the wrong number simply press on the link below and go through the process again.</p>
+                </div>
+                <div class="price_question_accordion_border">
+                    <div class="price_ac_top"><img src="Resource/Img/arrow_top.png" class="price_ac_top_icon"></div>
+                    <p class="price_question_ac_title">I didn't receive the SMS</p>
+                    <p class="price_question_ac_desc">In some areas it may take up to 5 minutes for the SMS to arrive, we are working with the carrier to increase the speed of delivery. Try sending the SMS with the code again. If you see a message that says you've reached the code limit, please wait a day and try again.</p>
+                </div>
+                <div class="price_question_accordion_border">
+                    <div class="price_ac_top"><img src="Resource/Img/arrow_top.png" class="price_ac_top_icon"></div>
+                    <p class="price_question_ac_title">I didn't receive the SMS</p>
+                    <p class="price_question_ac_desc">In some areas it may take up to 5 minutes for the SMS to arrive, we are working with the carrier to increase the speed of delivery. Try sending the SMS with the code again. If you see a message that says you've reached the code limit, please wait a day and try again.</p>
+                </div>
+                <div class="price_question_accordion">
+                    <div class="price_ac_top"><img src="Resource/Img/arrow_top.png" class="price_ac_top_icon"></div>
+                    <p class="price_question_ac_title">I registered the wrong number</p>
+                    <p class="price_question_ac_desc">If you registered the wrong number simply press on the link below and go through the process again.</p>
+                </div>
+            </div>
+        </div>
+      <footer>
+       <div class="footer-wrap-1">
+          <div class="container footer-sec-1 ">
+             <p class="footer-title-1">Teste grátis por 30 dias</p>
+             <button class="btn_circle btn_orange">CADASTRE AGORA</button>
+             <p class="footer-note-1">Não solicitamos cartão de crédito.</p>
+          </div>
+       </div>
+       <div class="footer-wrap-2">
+          <div class="container">
+             <div class="row footer-menu-container">
+                <div class="col-ml-7 col-ms-9">
+                   <div class="row">
+                      <div class="col-ml-3 col-ms-3 col-mx-12 footer-logo-container">
+                         <img src="Resource/Img/svg_logo_color.svg" class="footer-logo"  alt="Footer Logo">
+                      </div>
+                      <div class="col-ml-3 col-ms-3 col-mx-6">
+                         <p class="logo-footer-subtitle">Plataforma</p>
+                         <p class="logo-footer-link"><a href="#">Integrações</a></p>
+                         <p class="logo-footer-link"><a href="#">Preços</a></p>
+                      </div>
+                      <div class="col-ml-3 col-ms-3 col-mx-6">
+                         <p class="logo-footer-subtitle">Empresa</p>
+                         <p class="logo-footer-link"><a href="#">Sobre nós</a></p>
+                         <p class="logo-footer-link"><a href="#">Clientes</a></p>
+                         <p class="logo-footer-link"><a href="#">Contato</a></p>
+                      </div>
+                      <div class="col-ml-3 col-ms-3 col-mx-6">
+                         <p class="logo-footer-subtitle">Suporte</p>
+                         <p class="logo-footer-link"><a href="#">Central de ajuda</a></p>
+                         <p class="logo-footer-link"><a href="#">Blog</a></p>
+                      </div>
+                      <div class="col-mx-6 mobile-dev">
+                         <div class="logo-container">
+                            <p class="logo-footer-subtitle">
+                               Baixe agora
+                            </p>
+                            <a href="#"><img class="download-btn" src="Resource/Img/ios.png"  alt="ios"/></a>
+                            <a href="#"><img class="download-btn" src="Resource/Img/android.png"  alt="android"/></a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-ml-5 col-ms-3 desktop-div">
+                   <div class="logo-container">
+                      <p class="logo-footer-subtitle">
+                         Baixe agora
+                      </p>
+                      <a href="#"><img class="download-btn" src="Resource/Img/ios.png"  alt="ios"/></a>
+                      <a href="#"><img class="download-btn" src="Resource/Img/android.png" alt="android"/></a>
+                   </div>
+                </div>
+             </div>
+             <div class="row footer-sub-container">
+                <div class="col-sm-3 col-mx-12 footer-social-wrap">
+                   <a href="#"><img src="Resource/Img/facebook.png" class="social-btn"  alt="facebook"/></a>
+                   <a href="#"><img src="Resource/Img/twitter.png"  class="social-btn" alt="twitter"/></a>
+                   <a href="#"><img src="Resource/Img/googleplus.png" class="social-btn" alt="googleplus"/></a>
+                   <a href="#"><img src="Resource/Img/linkedin-1.png" class="social-btn" alt="linkedin"/></a>
+                </div>
+                <div class="col-sm-6 col-mx-12 footer-copy-wrap">
+                   <p class="footer-copy-text">Copyright ©2017-2017, Oitchau. Todos os direitos reservados.</p>
+                  <p class="footer-company-text"><a href="#">Termos e condições</a>  •  Política de privacidade</p>
+                </div>
+                <div class="col-sm-3 col-mx-12 footer-lang-wrap">
+                   <p class="language-footer-container">
+                      <span>Brasil</span>
+                     <div class="select_box_container">
+                        <select class="form-con language_select_box">
+                           <option>Português</option>
+                           <option>Português</option>
+                        </select>
+                      </div>
+                   </p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </footer>
+    </body>
+    <!-- bootstrap -->
+  <script src="Resource/Js/jquery.min.js"></script>
+    <script src="Resource/Js/popper.min.js"></script>
+    <script src="Resource/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Resource/Js/go.min.js" ></script>
+    <script src="Resource/Js/main.min.js" ></script>
+</html>

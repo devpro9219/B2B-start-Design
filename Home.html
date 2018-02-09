@@ -1,0 +1,544 @@
+<Html>
+<head>
+   <title>OITCHAU</title>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+   <meta name="description" content="This is the website to Save money by making point control and work shifts in real time">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-touch-fullscreen" content="yes">
+   <meta name="keywords" content="Save Money">
+   <meta name="author" content="Leonid Szneiberg">
+
+   <!-- bootstrap -->
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+   <link rel="stylesheet" href="Resource/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="Resource/Css/animate.min.css" />
+  <link rel="stylesheet" href="Resource/Css/Style.css"/>
+</head>
+<body>
+<input type="hidden" id="page_name" value="home">
+<header>
+   <div class="container">
+      <!--             <nav class="navbar navbar-expand-lg navbar-light main-nav"> -->
+      <nav class="navbar  navbar-expand-lg  navbar-light main-nav">
+         <a class="navbar-brand" href="#"><img class="main-logo" src="Resource/Img/svg_logo_white.svg"  alt="logo"/></a>
+         <button id="toggle_btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="Resource/Img/sandwich.png" alt="sandwich"/>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Preços</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Integrações</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Clientes</a>
+               </li>
+               <li class="nav-item login-container">
+                  <a class="nav-link login-btn"><span>Entrar</span></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</header>
+<div  id="navbar">
+   <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light stick-nav">
+         <a class="navbar-brand" href="#"><img class="main-logo" src="Resource/Img/svg_logo_nav.svg"/></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="Resource/Img/sandwich.png"  alt="sandwich"/>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Preços</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Integrações</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Clientes</a>
+               </li>
+               <li class="nav-item ">
+                  <a class="nav-link login-btn"><span>Entrar</span></a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</div>
+<div class="header-container">
+   <div class="container ">
+      <div class="row header">
+         <div class="col-ml-6 col-sm-7 col-mx-12">
+            <div class="left-con">
+               <h2 class="desktop-header-title">
+                  Controle de ponto </br> que economiza mais!
+               </h2>
+               <h2 class="mobile-header-title">
+                  Controle de ponto que economiza mais!
+               </h2>
+               <p>
+                  Economize dinheiro fazendo controle de ponto e jornadas de trabalho, em tempo real.
+               </p>
+               <form class="form-inline login-form desktop-header-btn">
+                  <input type="text" class="form-control mb-0 mr-sm-0 mb-sm-0" id="inlineFormInputName2" placeholder="Seu e-mail">
+                  <button type="submit" class="btn btn-primary">COMEÇAR AGORA</button>
+               </form>
+               <form class="form-inline login-form mobile-header-btn">
+                  <input type="text" class="form-control mb-0 mr-sm-0 mb-sm-0" id="inlineFormInputName2" placeholder="Seu e-mail">
+                  <button type="submit" class="btn btn-primary">COMEÇAR</button>
+               </form>
+               <div class="social-container">
+                  <p>Baixe o aplicativo</p>
+                  <div class="social-wrap">
+                     <a href="#"><img src="Resource/Img/ios.png"  alt="ios"/></a>
+                     <a href="#"><img src="Resource/Img/android.png"  alt="android"/></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-ml-6 col-sm-5 col-mx-12">
+            <div class="right-con">
+               <img class="phoneImg" src="Resource/Img/phone.png"  alt="phone">
+               <div class="background-1"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="container box-wrap home-service-wrap">
+   <div class="row home-service-sec ">
+      <div class="col-ml-4 col-ms-4">
+         <div class="box-comment">
+            <img src="Resource/Img/icon-lock.png" class="comment-icon" alt="lock" >
+            <p class="comment-title">Controle o limite de horas extras</p>
+            <p class="comment-note">Evite o excesso de atrasos e horas extra criando jornadas com regras e limites.</p>
+         </div>
+      </div>
+      <div class="col-ml-4 col-ms-4">
+         <div class="box-comment">
+            <img src="Resource/Img/icon-payroll.png" class="comment-icon"  alt="payroll">
+            <p class="comment-title">Gaste menos com folha de pagamento</p>
+            <p class="comment-note">Reduz processos manuais que custam tempo e dinheiro durante o fechamento de ponto.</p>
+         </div>
+      </div>
+      <div class="col-ml-4 col-ms-4">
+         <div class="box-comment">
+            <img src="Resource/Img/icon-person.png" class="comment-icon"  alt="person">
+            <p class="comment-title">Acabe com pontos fraudulentos</p>
+            <p class="comment-note">Verifique a localização, horário e identidade dos colaboradores com segurança.</p>
+         </div>
+      </div>
+   </div>
+   <div >
+      <p class="comment-box-title container">
+         Mais de <b>500</b> clientes já estão utilizando!
+      </p>
+   </div>
+   <div class="row mobile-margin-330">
+      <div class="col-ml-5 col-ms-5  col-mx-12">
+         <div class="home-com-box1">
+            <h2>Crie jornadas de trabalho rápido e com flexibilidade</h2>
+            <p>Defina os horários de chegada, saída e intervalo, de acordo com cada profissional e equipe. Adicione regras e limites para atrasos e saídas antecipadas. Prática, rápido e multiplataforma!</p>
+         </div>
+      </div>
+      <div class="col-ml-7 col-ms-7  col-mx-12">
+         <div class="home-img-box1">
+            <img src="Resource/Img/chat_back.png" class="img1"  alt="chart_background"/>
+            <img src="Resource/Img/chat1.png" class="img2"  alt="chartBox"/>
+            <img src="Resource/Img/chat2.png" class="img3"  alt="chatBox"/>
+         </div>
+      </div>
+   </div>
+   <div class="row ">
+      <div class="col-ml-6 col-ms-6 desktop-div">
+         <div class="home-img-box2">
+            <img src="Resource/Img/imageInv1.png" class="img1"  alt="INV"/>
+         </div>
+      </div>
+      <div class="col-ml-6 col-ms-6">
+         <div class="home-com-box2">
+            <h2>Acompanhe tudo em tempo real</h2>
+            <p>Por meio de notificações, alertas e relatórios atualizados diariamente, fique sabendo na hora sobre qualquer irregularidade. Evite surpresas no fechamento do mês!</p>
+            <div class="desktop-div ball-container">
+               <img src="Resource/Img/ball.png" class="round-ball"  alt="Ball"/>
+               <img src="Resource/Img/ball-pad.png" class="backdrop-ball"  alt="shadow Ball"/>
+            </div>
+         </div>
+      </div>
+      <div class="col-ml-6 col-ms-6 mobile-dev">
+         <div class="home-img-box2">
+            <img src="Resource/Img/imageInv1.png" class="img1"  alt="INV"/>
+            <div class="mobile-div ball-container">
+               <img src="Resource/Img/ball.png" class="round-ball"  alt="Ball"/>
+               <img src="Resource/Img/ball-pad.png" class="backdrop-ball"  alt="shadow Ball"/>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row home-section-09">
+      <div class="col-sm-5 col-mx-12">
+         <div class="home-com-box3">
+            <h2>Segurança e verificação de ponto</h2>
+            <p>Verifique a localização, horário e identidade dos colaboradores com segurança, por meio de Wi-Fi ou bluetooth. Sempre que houver irregularidade no registro de ponto, você saberá!</p>
+         </div>
+      </div>
+      <div class="col-sm-7  col-mx-12">
+         <div class="home-img-box3">
+            <img src="Resource/Img/imageInv5.png" class="img1"  alt="INV"/>
+            <img src="Resource/Img/imageInv4.png" class="img2"  alt="INV"/>
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="col-sm-12  clearfix">
+         <p class="title-Gostou">Gostou? Tem mais!</p>
+      </div>
+   </div>
+   <div class="row gostou-container ">
+      <div class="col-ml-4 col-ms-6 ">
+         <div class="home-section-04">
+            <img src="Resource/Img/ico-01.png"  alt="HOME ICON"/>
+            <p class="sub-title">
+               Relatórios diários
+            </p>
+            <p class="sub-note">
+               Acompanhe os resultados de cada colaborador diariamente.
+            </p>
+         </div>
+      </div>
+      <div class="col-ml-4 col-ms-6">
+         <div class="home-section-04">
+            <img src="Resource/Img/ico-02.png"  alt="HOME ICON"/>
+            <p class="sub-title">
+               Múltiplos perfis
+            </p>
+            <p class="sub-note">
+               Utilize mais de um perfil vinculado ao mesmo telefone.
+            </p>
+         </div>
+      </div>
+      <div class="col-ml-4 col-ms-6">
+         <div class="home-section-04">
+            <img src="Resource/Img/ico-03.png"  alt="HARD"/>
+            <p class="sub-title">
+               Múltiplas localizações
+            </p>
+            <p class="sub-note">
+               Cadastre diferentes locais de trabalho para a mesma empresa.
+            </p>
+         </div>
+      </div>
+
+      <div class="col-ml-4 col-ms-6">
+         <div class="home-section-04">
+            <img src="Resource/Img/ico-04.png"  alt="Aprovacao"/>
+            <p class="sub-title">
+               Aprovação de pedidos
+            </p>
+            <p class="sub-note">
+               Receba notificações de pedidos enviados por colaboradores.
+            </p>
+         </div>
+      </div>
+      <div class="col-ml-4 col-ms-6">
+         <div class="home-section-04">
+            <img src="Resource/Img/ico-05.png"  alt="De qualquer lugar"/>
+            <p class="sub-title">
+               De qualquer lugar
+            </p>
+            <p class="sub-note">
+               Disponível para celular, tablet e desktop.
+            </p>
+         </div>
+      </div>
+      <div class="col-ml-4 col-ms-6">
+         <div class="home-section-04">
+            <img src="Resource/Img/ico-06.png"  alt="REP"/>
+            <p class="sub-title">
+               Integração com REP
+            </p>
+            <p class="sub-note">
+               Pontos biométricos sincronizados automaticamente no aplicativo.
+            </p>
+         </div>
+      </div>
+   </div>
+</div>
+<section id="sec_contra">
+   <div class="container ">
+      <div class="row">
+         <div class="col-ml-5 col-ms-4">
+            <p class="home-contra-title">
+               Sua arma secreta contra processos trabalhistas.
+            </p>
+         </div>
+         <div class="col-ml-7 col-ms-8 ">
+            <p class="home-contra-note">
+               3 Milhões de processos trabalhistas são registrados em média todo ano no Brasil por falta de conhecimento ou regulamentação. Proteja-se!
+            </p>
+         </div>
+      </div>
+   </div>
+</section>
+<section id="sec_testi">
+   <div class="container">
+      <div class="row">
+         <div class="col-ml-6 col-ms-12 col-mx-12 left_testi_wrap">
+            <p class="title">
+               Oitchau em números
+            </p>
+            <table class="t-table">
+               <tr>
+                  <td>
+                     <p class="t-title">2.520.000</p>
+                     <p class="t-note">pontos</p>
+                  </td>
+                  <td>
+                     <p class="t-title">11</p>
+                     <p class="t-note">cidades</p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p class="t-title">935.332</p>
+                     <p class="t-note">pedidos de abono</p>
+                  </td>
+                  <td>
+                     <p class="t-title">49</p>
+                     <p class="t-note">localizações</p>
+                  </td>
+               </tr>
+            </table>
+         </div>
+         <div class="col-ml-6 col-ms-12 col-mx-12 home-map-wrap">
+            <div class="yellow_dot">
+            </div>
+            <div class="testi_wrap">
+               <div id="testi_div" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                     <div class="carousel-item active" alt="2">
+                        <p style="text-align:center;">
+                           <img src="Resource/Img/Bitmap.png" alt="First slide">
+                        </p>
+                        <p class="testi_name">Joana M</p>
+                        <p class="testi_job">Lojas Americanas</p>
+                        <p class="testi_desc">Fantástico. Com o Oitchau meus funcionário não se esquecem mais de bater o ponto e reduzi drasticamente o tempo gasto com pontos e gestão de horas.</p>
+                     </div>
+                     <div class="carousel-item" alt="4">
+                        <p style="text-align:center;">
+                           <img src="Resource/Img/Bitmap.png" alt="Second slide">
+                        </p>
+                        <p class="testi_name">Joana M</p>
+                        <p class="testi_job">Lojas Americanas</p>
+                        <p class="testi_desc">Fantástico. Com o Oitchau meus funcionário não se esquecem mais de bater o ponto e reduzi drasticamente o tempo gasto com pontos e gestão de horas.</p>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#testi_div" role="button" data-slide="prev">
+                     <img src="Resource/Img/ico_arrow_left.png"  alt="Arrow LEFT">
+                  </a>
+                  <a class="carousel-control-next" href="#testi_div" role="button" data-slide="next">
+                     <img src="Resource/Img/ico_arrow_right.png"  alt="Arrow Right">
+                  </a>
+               </div>
+               <img class="home-map" src="Resource/Img/map.png"  alt="Map"/>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<section id="sec_logos">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12">
+            <p>
+               Essas empresas já estão economizando. E a sua?
+            </p>
+         </div>
+      </div>
+      <div class="row">
+         <div class="logo-wrap" style="text-align:center;">
+            <img class="img1" src="Resource/Img/logo-01.png"  alt="logo1">
+            <img class="img2" src="Resource/Img/logo-02.png"  alt="logo2">
+            <img class="img3" src="Resource/Img/logo-03.png"  alt="logo3">
+            <img class="img4" src="Resource/Img/logo-04.png"  alt="logo4">
+         </div>
+      </div>
+   </div>
+</section>
+<footer>
+       <div class="footer-wrap-1">
+          <div class="container footer-sec-1 ">
+             <p class="footer-title-1">Teste grátis por 30 dias</p>
+             <button class="btn_circle btn_orange">CADASTRE AGORA</button>
+             <p class="footer-note-1">Não solicitamos cartão de crédito.</p>
+          </div>
+       </div>
+       <div class="footer-wrap-2">
+          <div class="container">
+             <div class="row footer-menu-container">
+                <div class="col-ml-7 col-ms-9">
+                   <div class="row">
+                      <div class="col-ml-3 col-ms-3 col-mx-12 footer-logo-container">
+                         <img src="Resource/Img/svg_logo_color.svg" class="footer-logo"  alt="Footer Logo">
+                      </div>
+                      <div class="col-ml-3 col-ms-3 col-mx-6">
+                         <p class="logo-footer-subtitle">Plataforma</p>
+                         <p class="logo-footer-link"><a href="#">Integrações</a></p>
+                         <p class="logo-footer-link"><a href="#">Preços</a></p>
+                      </div>
+                      <div class="col-ml-3 col-ms-3 col-mx-6">
+                         <p class="logo-footer-subtitle">Empresa</p>
+                         <p class="logo-footer-link"><a href="#">Sobre nós</a></p>
+                         <p class="logo-footer-link"><a href="#">Clientes</a></p>
+                         <p class="logo-footer-link"><a href="#">Contato</a></p>
+                      </div>
+                      <div class="col-ml-3 col-ms-3 col-mx-6">
+                         <p class="logo-footer-subtitle">Suporte</p>
+                         <p class="logo-footer-link"><a href="#">Central de ajuda</a></p>
+                         <p class="logo-footer-link"><a href="#">Blog</a></p>
+                      </div>
+                      <div class="col-mx-6 mobile-dev">
+                         <div class="logo-container">
+                            <p class="logo-footer-subtitle">
+                               Baixe agora
+                            </p>
+                            <a href="#"><img class="download-btn" src="Resource/Img/ios.png"  alt="ios"/></a>
+                            <a href="#"><img class="download-btn" src="Resource/Img/android.png"  alt="android"/></a>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="col-ml-5 col-ms-3 desktop-div">
+                   <div class="logo-container">
+                      <p class="logo-footer-subtitle">
+                         Baixe agora
+                      </p>
+                      <a href="#"><img class="download-btn" src="Resource/Img/ios.png"  alt="ios"/></a>
+                      <a href="#"><img class="download-btn" src="Resource/Img/android.png" alt="android"/></a>
+                   </div>
+                </div>
+             </div>
+             <div class="row footer-sub-container">
+                <div class="col-sm-3 col-mx-12 footer-social-wrap">
+                   <a href="#"><img src="Resource/Img/facebook.png" class="social-btn"  alt="facebook"/></a>
+                   <a href="#"><img src="Resource/Img/twitter.png"  class="social-btn" alt="twitter"/></a>
+                   <a href="#"><img src="Resource/Img/googleplus.png" class="social-btn" alt="googleplus"/></a>
+                   <a href="#"><img src="Resource/Img/linkedin-1.png" class="social-btn" alt="linkedin"/></a>
+                </div>
+                <div class="col-sm-6 col-mx-12 footer-copy-wrap">
+                   <p class="footer-copy-text">Copyright ©2017-2017, Oitchau. Todos os direitos reservados.</p>
+                  <p class="footer-company-text"><a href="#">Termos e condições</a>  •  Política de privacidade</p>
+                </div>
+                <div class="col-sm-3 col-mx-12 footer-lang-wrap">
+                   <p class="language-footer-container">
+                      <span>Brasil</span>
+                     <div class="select_box_container">
+                        <select class="form-con language_select_box">
+                           <option>Português</option>
+                           <option>Português</option>
+                        </select>
+                      </div>
+                   </p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </footer>
+<style>
+</style>
+<!-- Modal area -->
+<div class="modal fade signup_modal register_modal" tabindex="-1" role="dialog" aria-labelledby="SignupModal" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+<!--       <img src="Resource/Img/big_logo.png"> -->
+      <div class="modal-content">
+         <div class="modal-header">
+            <h4 class="modal-title">Create an account</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <img src="Resource/Img/close_icon.png" alt="close">
+            </button>
+         </div>
+         <div class="modal-body">
+            <div class="about_form_content">
+               <form id="register_form">
+                  <div class="form-group">
+                     <label for="signup_name">Full name</label>
+                     <input id="signup_name" class="form-control" type="text">
+                    <label class="error_msg"></label>
+                  </div>
+                  <div class="form-group">
+                     <label for="signup_email">E-mail</label>
+                     <input id="signup_email" class="form-control" type="email">
+                     <label class="error_msg"></label>
+                  </div>
+                  <div class="form-group">
+                     <label for="signup_pass">Password</label>
+                     <div class="pass_input"><input id="signup_pass" class="form-control" type="password" ><p></p></div>
+                     <label class="error_msg"></label>
+                  </div>
+                  <div class="form-group">
+                     <label for="signup_phone">Phone number</label>
+                     <input id="signup_phone" class="form-control" type="number">
+                      <label class="error_msg"></label>
+                  </div>
+                  <button type="submit" class="btn_circle btn_blue">NEXT</button>
+               </form>
+               <span>Se você já é cadastro <a class="login_modal_link">entre aqui</a>.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade signup_modal login_modal" tabindex="-1" role="dialog" aria-labelledby="SignupModal" aria-hidden="true">
+   <div class="modal-dialog modal-lg">
+<!--       <img src="Resource/Img/big_logo.png"> -->
+      <div class="modal-content">
+         <div class="modal-header">
+            <h4 class="modal-title">Entrar</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <img src="Resource/Img/close_icon.png"  alt="close">
+            </button>
+         </div>
+         <div class="modal-body">
+            <div class="about_form_content">
+               <form id="login_form">
+                  <div class="form-group">
+                     <label for="login_email">Email</label>
+                     <input id="login_email" class="form-control" type="email">
+                      <label class="error_msg"></label>
+                  </div>
+                  <div class="form-group">
+                     <label for="login_pass">Password</label>
+                     <div class="pass_input"><input id="login_pass" class="form-control" type="text"><p></p></div>
+                    <label class="error_msg"></label>
+                  </div>
+                  <a href="#">recover password</a>
+                  <button type="submit" class="btn_circle btn_blue">Entrar</button>
+               </form>
+               <span>Se você não é cadastrado <a class="signup_modal_link">crie sua conta</a>.</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- end modal area -->
+<!-- bootstrap -->
+<script src="Resource/Js/jquery.min.js"></script>
+    <script src="Resource/Js/popper.min.js"></script>
+    <script src="Resource/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Resource/Js/go.min.js" ></script>
+    <script src="Resource/Js/main.js" ></script>
+</body>
+</Html>
